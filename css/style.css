@@ -1,0 +1,29 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Link Styles */
+
+
+/* Pseudo Classes */
+
+
+/* Section Styles */
+
+
+.seperator {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 8px solid #2f3944;
+    border-bottom: 4px solid #2f3944;
+}
+
+/* Media Queries */
