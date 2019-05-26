@@ -5,7 +5,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    flex: 1;
 }
 
 /* Link Styles */
@@ -16,6 +23,10 @@ body {
 
 /* Section Styles */
 
+
+footer p {
+    padding-bottom: 75%;
+}
 
 .seperator {
     margin-left: 20px;
