@@ -11,8 +11,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+fieldset {
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label {
+    color: #98a2ab;
+}
+
 .row {
     flex: 1;
+}
+
+p {
+    color: darkgray;
 }
 
 /* Link Styles */
@@ -20,21 +34,96 @@ body {
 
 /* Pseudo Classes */
 
+::-webkit-input-placeholder {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: darkgrey;
+    font-style: italic;
+  }
+  ::-moz-placeholder {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: darkgrey;
+    font-style: italic;
+  }
+  :-ms-input-placeholder {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: darkgrey;
+    font-style: italic;
+  }
+  ::placeholder {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: darkgrey;
+    font-style: italic;
+  }
+  
+
 
 /* Section Styles */
 
+.main-nav {
+    background: #2f3944;
+}
 
-footer p {
-    padding-bottom: 75%;
+.main-nav h1 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.welcome {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+}
+
+.welcome h2 {
+    padding-top: 20px;
 }
 
 .seperator {
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
     border-top: 8px solid #2f3944;
     border-bottom: 4px solid #2f3944;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    height: auto;
+    width: 100%;
+    background:#eff0f1;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+
+input[class="zipcode"] {
+    width: 50%;
+}
+
+
+footer p {
+    padding-bottom: 75%;
+}
+
+
 
 /* Media Queries */
