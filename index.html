@@ -14,17 +14,16 @@
             <h1>The Code Review</h1>
     </nav>
     <header class="welcome">
-        <h2>Signup for our newsletter</h2>
+        <h2 class="h2-color">Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox.</p>
     </header>
-    <div class="seperator">
 
-    </div>
+    <div class="seperator-1"></div>
 
     <div class="row">
         <form action="index.html" method="POST">
             <fieldset class="contact-info">
-                <legend><h2>Contact Information</h2></legend>
+                <legend><h2 class="h2-color">Contact Information</h2></legend>
 
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="user_name" placeholder="Required">
@@ -41,24 +40,28 @@
                 <label for="city">City:</label>
                 <input type="text" id="city" name="user_city">
 
-                <label for="state">State:</label>
+                <div class="select-wrap"><label for="state">State:</label>
                 <select id="state" name="user_state">
-                        <option value="" disabled selected>Choose State</option>
+                        <option class="disabled" value="" disabled selected>Choose State</option>
                         <option value="vienna">Vienna</option>
                         <option value="helsinki">Helsinki</option>
                         <option value="berlin">Berlin</option>
                         <option value="paris">Paris</option>
                         <option value="san_francisco">San Francisco</option>
                         <option value="moscow">Moscow</option>
-                </select>
+                </select></div>
+            
 
-                <label for="zip">Zip Code</label>
+                <label for="zip">Zip Code</label><br>
                 <input class="zipcode" type="text" id="zip" name="user_zip">
-            </fieldset>        
+            </fieldset>    
+            
+            <div class="seperator-2"></div>
+
 
             <fieldset class="newsletter-info">
-                <label><h2>Newsletter</h2></label>
-                <label class="newsletter-type">Select the newsletter you would like to receive</label><br>
+                <label><h2 class="h2-color">Newsletter</h2></label>
+                <div class="newsletter-type"><label>Select the newsletter you would like to receive:</label></div>
 
                 <input type="checkbox" id="html-n" name="user_htmlnews">
                 <label for="html-n">HTML News</label><br>
@@ -70,17 +73,17 @@
                 <label for="java-n">Javascrip News</label><br>
 
 
-                <label class="newsletter-format">Newsletter format:</label><br>
+                <div class="newsletter-format"><label>Newsletter format:</label><br></div>
                 <input type="radio" id="html-f" value="html" name="user_format">
                 <label for="html-f">HTML</label><br>
 
-                <input type="radio" id="plain-f" value="plain_text"name="user_format">
+                <input type="radio" id="plain-f" value="plain_text" name="user_format">
                 <label for="plain-f">Plain text</label><br>
 
-                <label for="other">Other topics you would like to hear about</label><br>
+                <div class="other-text"><label for="other">Other topics you would like to hear about:</label></div><br>
                 <textarea id="other" name="user_other"></textarea>
             </fieldset>
-            <button type="submit">Sign Up</button>
+            <div class="button-wrap"><button type="submit">Sign Up</button></div>
         </form>
     </div>
 

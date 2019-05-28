@@ -19,7 +19,9 @@ fieldset {
 
 label {
     color: #98a2ab;
+    margin-top: 10px;
 }
+
 
 .row {
     flex: 1;
@@ -27,6 +29,10 @@ label {
 
 p {
     color: darkgray;
+}
+
+.h2-color {
+    color:#2f3944;
 }
 
 /* Link Styles */
@@ -62,8 +68,6 @@ p {
     color: darkgrey;
     font-style: italic;
   }
-  
-
 
 /* Section Styles */
 
@@ -88,14 +92,13 @@ p {
     padding-top: 20px;
 }
 
-.seperator {
+.seperator-1 {
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-    border-top: 8px solid #2f3944;
-    border-bottom: 4px solid #2f3944;
+    margin-bottom: 15px;
+    border-top: 6px solid #2f3944;
+    border-bottom: 2px solid #2f3944;
 }
 
 input[type="text"],
@@ -111,7 +114,20 @@ select {
     padding: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+select {
+    height: 50px;
+    color: darkgrey;
+}
+
+.select-wrap {
+    margin-bottom: 10px;
+}
+
+.select-label {
+    margin-bottom: 10px;
 }
 
 
@@ -119,9 +135,57 @@ input[class="zipcode"] {
     width: 50%;
 }
 
+.seperator-2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2f3944;
+}
+
+.newsletter-type,
+.newsletter-format {
+     margin-bottom: 10px;
+}
+.newsletter-format {
+    margin-top: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.other-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+button {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    background: #6bb9b4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-wrap {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 
 footer p {
-    padding-bottom: 75%;
+    padding-bottom: 45%;
+    padding-top: 5%;
+    text-align: center;
+    font-style: italic;
 }
 
 
