@@ -11,56 +11,70 @@
 </head>
 <body>
     <nav class="main-nav">
-            <h1>The Code Review</h1>
+            <h2>The Code Review</h2>
     </nav>
+<div class="desktop-wrap">
     <header class="welcome">
-        <h2 class="h2-color">Signup for our newsletter</h2>
+        <h2 class="h2-welcome">Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox.</p>
     </header>
 
     <div class="seperator-1"></div>
 
-    <div class="row">
-        <form action="index.html" method="POST">
-            <fieldset class="contact-info">
-                <legend><h2 class="h2-color">Contact Information</h2></legend>
+            <form action="index.html" method="POST">
+                <fieldset class="contact-info">
+                    <legend class="h2-form">Contact Information</legend>
+                   
+                    <div class="flex-row"> 
+                    <label class="flex-label" for="name">Full Name:</label>
+                    <input required type="text" id="name" name="user_name" placeholder="Required" class="input-control">
+                    </div>      
+               
+                    <div class="flex-row"> 
+                    <label class="flex-label"  for="email">Email:</label>
+                    <input required type="email" id="email" name="user_email" placeholder="Required" class="input-control">
+                    </div>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="Required">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email" placeholder="Required">
+                    <div class="flex-row"> 
+                    <label class="flex-label"  for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="user_phone" class="input-control">
+                    </div>
+                    
+                    <div class="flex-row"> 
+                    <label class="flex-label" for="street">Street Address:</label>
+                    <input type="text" id="street" name="user_street" class="input-control">
+                    </div>
+                    
+                    <div class="flex-row"> 
+                    <label class="flex-label" for="city">City:</label>
+                    <input type="text" id="city" name="user_city" class="input-control">
+                    </div>
+                    
+                    <div class="flex-row select-wrap"> 
+                    <div class="select-label"><label for="state">State:</label></div>
+                    <div class="select-control"><select id="state" name="user_state">
+                            <option class="disabled" value="" disabled selected>Choose State</option>
+                            <option value="vienna">Vienna</option>
+                            <option value="helsinki">Helsinki</option>
+                            <option value="berlin">Berlin</option>
+                            <option value="paris">Paris</option>
+                            <option value="san_francisco">San Francisco</option>
+                            <option value="moscow">Moscow</option>
+                    </select></div>
+                    </div>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="user_phone">
+                    <div class="flex-row"> 
+                    <label class="flex-zip" for="zip">Zip Code</label><br>
+                    <input class="zipcode"  type="text" id="zip" name="user_zip">
+                    </div> 
 
-                <label for="street">Street Address:</label>
-                <input type="text" id="street" name="user_street">
+                </fieldset>    
 
-                <label for="city">City:</label>
-                <input type="text" id="city" name="user_city">
-
-                <div class="select-wrap"><label for="state">State:</label>
-                <select id="state" name="user_state">
-                        <option class="disabled" value="" disabled selected>Choose State</option>
-                        <option value="vienna">Vienna</option>
-                        <option value="helsinki">Helsinki</option>
-                        <option value="berlin">Berlin</option>
-                        <option value="paris">Paris</option>
-                        <option value="san_francisco">San Francisco</option>
-                        <option value="moscow">Moscow</option>
-                </select></div>
-            
-
-                <label for="zip">Zip Code</label><br>
-                <input class="zipcode" type="text" id="zip" name="user_zip">
-            </fieldset>    
-            
             <div class="seperator-2"></div>
 
 
             <fieldset class="newsletter-info">
-                <label><h2 class="h2-color">Newsletter</h2></label>
+                <label class="h2-form">Newsletter</label>
                 <div class="newsletter-type"><label>Select the newsletter you would like to receive:</label></div>
 
                 <input type="checkbox" id="html-n" name="user_type">

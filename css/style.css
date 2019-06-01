@@ -31,8 +31,19 @@ p {
     color: darkgray;
 }
 
-.h2-color {
+.h2-welcome {
     color:#2f3944;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.h2-form {
+    color:#2f3944;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* Link Styles */
@@ -83,10 +94,12 @@ select:focus{
     background: #2f3944;
 }
 
-.main-nav h1 {
+.main-nav h2 {
+    padding-top: 10px;
     text-transform: uppercase;
     color: white;
     text-align: center;
+    font-weight: lighter;
 }
 
 .welcome {
@@ -96,9 +109,6 @@ select:focus{
     padding-bottom: 30px;
 }
 
-.welcome h2 {
-    padding-top: 20px;
-}
 
 .seperator-1 {
     margin-left: 20px;
@@ -125,13 +135,13 @@ select {
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
+.select-wrap {
+    margin-bottom: 10px;
+}
+
 select {
     height: 50px;
     color: darkgrey;
-}
-
-.select-wrap {
-    margin-bottom: 10px;
 }
 
 .select-label {
@@ -140,7 +150,7 @@ select {
 
 
 input[class="zipcode"] {
-    width: 50%;
+    max-width: 50%;
 }
 
 .seperator-2 {
@@ -155,14 +165,19 @@ input[class="zipcode"] {
 .newsletter-format {
      margin-bottom: 10px;
 }
+
+.newsletter-type {
+    margin-top: 25px;
+}
 .newsletter-format {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 5px;
 }
 
 .other-text {
@@ -199,3 +214,62 @@ footer p {
 
 
 /* Media Queries */
+
+@media(min-width: 768px) {
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    width: 600px;
+    flex-wrap: wrap;
+}
+.flex-label,
+.select-label {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.input-control {
+    flex: 2;
+}
+
+.select-control {
+    flex: 2 1 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.select-wrap {
+    min-height: 70px;
+    margin-bottom: 0;
+}
+
+.flex-zip  {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 190px;
+}
+
+input[class="zipcode"] {
+    flex-basis: 25%;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer p {
+    padding-bottom: 15%;
+}
+
+.desktop-wrap {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+}
