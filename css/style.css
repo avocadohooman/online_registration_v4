@@ -46,7 +46,18 @@ p {
     padding-top: 20px;
 }
 
-/* Link Styles */
+/* Transitions */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    -webkit-transition: background .3s ease-in, box-shadow ease-out .3s, padding .3s ease-in;
+	-moz-transition: background .3s ease-in, box-shadow ease-out .3s, padding .3s ease-in;
+	-ms-transition: background .3s ease-in, box-shadow ease-out .3s, padding .3s ease-in;
+	-o-transition: background .3s ease-in, box-shadow ease-out .3s, padding .3s ease-in;
+	transition: background .3s ease-in, box-shadow ease-out .3s, padding .3s ease-in;
+}
 
 
 /* Pseudo Classes */
@@ -54,10 +65,19 @@ p {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-textarea:focus,
-select:focus{
+textarea:focus {
     background-color: white;
+    box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.flex-label:hover,
+.select-label:hover,
+.flex-zip:hover {
+    color: rgba(81, 203, 238, 1);
+}
+
 
 ::-webkit-input-placeholder {
     text-align: right;
@@ -113,10 +133,21 @@ select:focus{
 .seperator-1 {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 10px;
-    margin-bottom: 15px;
-    border-top: 6px solid #2f3944;
+    padding-top: 5px;
+    margin-bottom: 15px; 
+    border-top: 5px solid #2f3944;
     border-bottom: 2px solid #2f3944;
+}
+
+.background-dark {
+    background-color: #363c44;
+}
+
+.flex-label,
+.select-label,
+.flex-zip,
+.h2-white  {
+    color:white;
 }
 
 input[type="text"],
@@ -128,12 +159,14 @@ select {
     width: 100%;
     background:#eff0f1;
     border: none;
+    outline: none;
     border-radius: 5px;
     padding: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; 
 }
+
 
 .select-wrap {
     margin-bottom: 10px;
@@ -156,7 +189,7 @@ input[class="zipcode"] {
 .seperator-2 {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
     border-bottom: 2px solid #2f3944;
 }
