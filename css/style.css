@@ -18,7 +18,7 @@ fieldset {
 }
 
 label {
-    color: #98a2ab;
+    color: white;
     margin-top: 10px;
 }
 
@@ -39,7 +39,6 @@ p {
     padding-top: 20px;
 }
 .h2-form {
-    color:#2f3944;
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 20px;
@@ -141,6 +140,7 @@ textarea:focus {
 
 .background-dark {
     background-color: #363c44;
+    padding-bottom: 30px;
 }
 
 .flex-label,
@@ -177,10 +177,6 @@ select {
     color: darkgrey;
 }
 
-.margin {
-    margin-bottom: 10px;
-}
-
 
 input[class="zipcode"] {
     max-width: 50%;
@@ -191,7 +187,7 @@ input[class="zipcode"] {
     margin-right: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #2f3944;
+    border-bottom: 2px solid white;
 }
 
 .newsletter-type,
@@ -199,9 +195,6 @@ input[class="zipcode"] {
      margin-bottom: 10px;
 }
 
-.newsletter-type {
-    margin-top: 25px;
-}
 .newsletter-format {
     margin-top: 20px;
 }
@@ -231,7 +224,7 @@ button {
 }
 
 .button-wrap {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -239,11 +232,10 @@ button {
 
 footer p {
     padding-bottom: 45%;
-    padding-top: 5%;
+    padding-top: 3%;
     text-align: center;
     font-style: italic;
 }
-
 
 
 /* Media Queries */
